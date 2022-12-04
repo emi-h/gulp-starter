@@ -1,0 +1,30 @@
+h1 {
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+h1 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+h1 span::before, h1 span::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: green;
+}
+h1 span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+h1 span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
