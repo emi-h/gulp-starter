@@ -7,7 +7,64 @@
   <title>Gulp</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <h1><span>Hello Gulp!</span></h1>
+<body class="l-body" id="body">
+  <div class="l-site">
+    <!-- header -->
+    <header class="l-header">
+      <div class="l-header__logo">
+        <h1>
+          <a href="#"><img src="images/logo.svg" alt="ロゴ説明" /></a>
+        </h1>
+      </div>
+      <div class="l-header__gnav" id="js-menu">
+        <nav class="c-gnav">
+          <ul class="c-gnav__list">
+            <li class="c-gnav__item">
+              <a class="c-gnav__link" href="#">▼▼メニュー</a>
+            </li>
+            <li class="c-gnav__item">
+              <a class="c-gnav__link" href="#">▼▼メニュー</a>
+            </li>
+            <li class="c-gnav__item">
+              <a class="c-gnav__link" href="#">▼▼メニュー</a>
+            </li>
+            <li class="c-gnav__item">
+              <a class="c-gnav__link" href="#">▼▼メニュー</a>
+            </li>
+            <li class="c-gnav__item">
+              <a class="c-gnav__link" href="#">▼▼メニュー</a>
+            </li>
+            <li class="c-gnav__item">
+              <a class="c-gnav__link" href="#">▼▼メニュー</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="l-header__btn">
+        <button type="button" class="c-btnMenu" id="js-btnMenu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="l-site__main">
+      <section class="l-section">
+        <div class="l-inner">
+          <h2>タイトル</h2>
+          <h3>サブタイトル</h3>
+          <p>本文</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>footer</footer>
+
+    <!-- pagetop -->
+    <a href="#top">ページトップへ</a>
+  </div>
+  <!-- /.siteWrapper -->
+  <script src="js/index.js"></script>
 </body>
 </html>

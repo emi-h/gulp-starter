@@ -1,0 +1,27 @@
+@use '../foundation/setting' as s;
+@use '../foundation/mixin' as *;
+
+/* l-header */
+.l-header {
+    position: relative;
+    &__btn {
+      display: none;
+    }
+    @include tab {
+      &__gnav {
+        display: none;
+      }
+  
+      &__gnav.menu_isOpen {
+        display: block;
+        overflow-y: scroll;
+      }
+  
+      &__btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+}

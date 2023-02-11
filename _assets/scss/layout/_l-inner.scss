@@ -1,0 +1,12 @@
+@use '../foundation/setting' as s;
+@use '../foundation/mixin' as *;
+
+/* l-inner */
+.l-inner {
+    &--main{
+        width: s.$inner_width_01;
+        max-width: 100%;
+        padding: s.$inner_padding_01;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,9 @@
+@use '../foundation/setting' as s;
+@use '../foundation/mixin' as *;
+
+/* l-body */
+.l-body{
+    &.noScroll {
+        overflow: hidden;
+    }
+}
