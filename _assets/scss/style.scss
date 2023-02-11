@@ -3,7 +3,6 @@
  @use "foundation/base";
  
  //------layout
- @use "layout/l-site";
  @use "layout/l-body";
  @use "layout/l-header";
  @use "layout/l-footer";
@@ -11,6 +10,7 @@
  
  //------object
  // Component
+ @use "object/component/c-site";
  @use "object/component/c-gnav";
  @use "object/component/c-btnMenu";
  @use "object/component/c-title";

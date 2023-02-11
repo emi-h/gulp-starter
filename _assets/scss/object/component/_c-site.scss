@@ -1,8 +1,8 @@
-@use '../foundation/setting' as s;
-@use '../foundation/mixin' as *;
+@use '../../foundation/setting' as s;
+@use '../../foundation/mixin' as *;
 
-/* l-site */
-.l-site {
+/* c-site */
+.c-site {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
