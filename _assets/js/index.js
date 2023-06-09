@@ -1,20 +1,25 @@
-// メニュー
+// ハンバーガーメニュー開閉
 function toggleNav() {
-    document.getElementById('js-btnMenu').classList.toggle('btnMenu_isOn');
-    document.getElementById('js-menu').classList.toggle('menu_isOpen');
-    document.getElementById('body').classList.toggle('noScroll');
-  };
-  function closeNav() {
-    document.getElementById('js-btnMenu').classList.remove('btnMenu_isOn');
-    document.getElementById('js-menu').classList.remove('menu_isOpen');
-    document.getElementById('body').classList.remove('noScroll');
-  };
-  document.getElementById('js-btnMenu').addEventListener('click',function(){
-    toggleNav();
+  document.getElementById('js-btnMenu').classList.toggle('btnMenu_isOn');
+  document.getElementById('js-menu').classList.toggle('menu_isOpen');
+  document.getElementById('body').classList.toggle('noScroll');
+};
+function closeNav() {
+  document.getElementById('js-btnMenu').classList.remove('btnMenu_isOn');
+  document.getElementById('js-menu').classList.remove('menu_isOpen');
+  document.getElementById('body').classList.remove('noScroll');
+};
+document.getElementById('js-btnMenu').addEventListener('click',function(){
+  toggleNav();
+});
+
+// メニュー内のリンクをクリックしたらメニューを閉じる
+const menuLinks = document.querySelectorAll('#js-menu a');
+menuLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    closeNav();
   });
-    document.getElementById('js-menu').addEventListener('click',function(){
-      closeNav();
-  });
+});
   
   // フワッと表示
   function load_effect() {
